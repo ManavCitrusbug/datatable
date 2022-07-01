@@ -23,21 +23,20 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Range of data 
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">10</a></li>
-                <li><a class="dropdown-item" href="#">20</a></li>
-                <li><a class="dropdown-item" href="#">30</a></li>
-                <li><a class="dropdown-item" href="#">40</a></li>
-                
-              </ul>
-            </li>
+            <select onchange='range_page()'class="selectpicker" id='range' style="height:38px; width:160px; border-radius:8px"   >
+            
+              <option class="text-center">Range of data</option>
+              <option class="text-center">40</option>
+              <option class="text-center">50</option>
+              <option class="text-center">60</option>
+              <option class="text-center">100</option>
+              
+              
+          
+            </select>
             
           </ul>
-          <select class="selectpicker" style="height:38px; width:160px; border-radius:8px">
+          <select  class="selectpicker" style="height:38px; width:160px; border-radius:8px" >
             
               <option class="text-center">Filter Data</option>
               <option class="text-center">Age</option>
@@ -61,8 +60,8 @@
       </div>
     </nav>
     <br><br><br>
-    <table class="table table-active container" style='border:2px solid rgba(50, 115, 220, 0.3); box-shadow: 0 0 10px 5px;  border-radius: 8px 8px;'>
-      <thead>
+    <table class="table  container" style='border:2px solid rgba(50, 115, 220, 0.3); box-shadow: 0 0 10px 5px;  border-radius: 8px 8px;'>
+      <thead class='table-active'>
         <tr>
           <th scope="col"class='text-center'>No</th>
           <th scope="col" class='text-center'>Age</th>
@@ -77,11 +76,21 @@
           
         </tr>
       </thead>
-      <tbody id='data'>
+      <tbody id='data' >
         
       
       </tbody>
-    </table>
+    </table><br><br>
+
+    <nav aria-label="Page navigation example container" >
+      <ul class="pagination justify-content-center" id='page'>
+        
+        
+        
+        
+      </ul>
+    </nav>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src='{%static "js/jquery-3.6.0.min.js"%}'></script>
     <script defer type="text/javascript" src='{%static "js/db.js"%}'></script>
