@@ -20,23 +20,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" onclick='home()'>Home</a>
             </li>
             
-            <select onchange='range_page()'class="selectpicker" id='range' style="height:38px; width:160px; border-radius:8px"   >
+            <select onchange='range_page()' class="selectpicker" id='range' style="height:38px; width:160px; border-radius:8px"   >
             
               <option class="text-center">Range of data</option>
-              <option class="text-center">40</option>
               <option class="text-center">50</option>
               <option class="text-center">60</option>
               <option class="text-center">100</option>
-              
+              <option class="text-center">150</option>
               
           
             </select>
             
           </ul>
-          <select  class="selectpicker" style="height:38px; width:160px; border-radius:8px" >
+          
+          <select  id='filterdata' class="selectpicker" style="height:38px; width:160px; border-radius:8px" onchange='filter()' >
             
               <option class="text-center">Filter Data</option>
               <option class="text-center">Age</option>
@@ -53,8 +53,8 @@
           </select>&nbsp;&nbsp;&nbsp;
           
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Enter the data" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Go</button>
+            <input class="form-control me-2" type="search" placeholder="Enter the data" aria-label="Search" id='serching'>
+            
           </form>
         </div>
       </div>
@@ -64,26 +64,26 @@
       <thead class='table-active'>
         <tr>
           <th scope="col"class='text-center'>No</th>
-          <th scope="col" class='text-center'>Age</th>
-          <th scope="col" class='text-center'>Sex</th>
-          <th scope="col" class='text-center'>Job</th>
-          <th scope="col" class='text-center'>Housing </th>
-          <th scope="col" class='text-center'>Saving accounts</th>
-          <th scope="col" class='text-center'>Checking account</th>
-          <th scope="col" class='text-center'>Credit amount</th>
-          <th scope="col" class='text-center'>Duration</th>
-          <th scope="col" class='text-center'>Purpose</th>
+          <th scope="col" class='text-center' onclick='Age()'>Age</th>
+          <th scope="col" class='text-center' onclick='Sex()'>Sex</th>
+          <th scope="col" class='text-center' onclick='Job()'>Job</th>
+          <th scope="col" class='text-center' onclick='Housing()'>Housing </th>
+          <th scope="col" class='text-center' onclick='Saving_accounts()'>Saving accounts</th>
+          <th scope="col" class='text-center' onclick='Cheking_accounts()'>Checking account</th>
+          <th scope="col" class='text-center' onclick='Credit_accounts()'>Credit amount</th>
+          <th scope="col" class='text-center' onclick='Duration()'>Duration</th>
+          <th scope="col" class='text-center' onclick='Purpose()'>Purpose</th>
           
         </tr>
       </thead>
-      <tbody id='data' >
+      <tbody id='rowdata' >
         
       
       </tbody>
     </table><br><br>
 
-    <nav aria-label="Page navigation example container" >
-      <ul class="pagination justify-content-center" id='page'>
+    <nav aria-label="Page navigation example container"  >
+      <ul class="pagination justify-content-center" id='page' >
         
         
         

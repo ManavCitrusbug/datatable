@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',views.Home.as_view(),name='home'),
     path('datas/',views.Showdb.as_view(),name='datas'),
+    path('Agedata/',views.Ageascending.as_view(),name='Agedata'),
 ]
