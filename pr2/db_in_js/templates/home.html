@@ -14,13 +14,13 @@
     <hr style="border:2px solid red;">
     <marquee ><h1 >All Data Table</h1></marquee>
     <hr style="border:2px solid red;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary container" style="border-radius:8px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary container" style="border-radius:8px; height:80px">
       <div class="container">
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" onclick='home()'>Home</a>
+              <a class="nav-link active" aria-current="page" href="#" onclick='Homepagination()'>Home</a>
             </li>
             
             <select onchange='range_page()' class="selectpicker" id='range' style="height:38px; width:160px; border-radius:8px"   >
@@ -38,7 +38,7 @@
           
           <select  id='filterdata' class="selectpicker" style="height:38px; width:160px; border-radius:8px" onchange='filter()' >
             
-              <option class="text-center">Filter Data</option>
+              <option class="text-center" id='filterdatas'>Filter Data</option>
               <option class="text-center">Age</option>
               <option class="text-center">Sex</option>
               <option class="text-center">Job</option>
@@ -58,21 +58,34 @@
           </form>
         </div>
       </div>
-    </nav>
-    <br><br><br>
+      
+    </nav><br>
+    <nav id='valnav' class="navbar navbar-expand-lg bg-light container " style='border-radius:8px; border:3px solid black'>
+      <div class="container-fluid">
+       
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+          
+          <span class="navbar-text ">
+            <h3 id='validation' style='color:black;'>HELLO</h3>
+          </span>
+        </div>
+      </div>
+    </nav><br>
+  
     <table class="table  container" style='border:2px solid rgba(50, 115, 220, 0.3); box-shadow: 0 0 10px 5px;  border-radius: 8px 8px;'>
-      <thead class='table-active'>
+      <thead class='table-active' >
         <tr>
-          <th scope="col"class='text-center'>No</th>
-          <th scope="col" class='text-center' onclick='Age()'>Age</th>
-          <th scope="col" class='text-center' onclick='Sex()'>Sex</th>
-          <th scope="col" class='text-center' onclick='Job()'>Job</th>
-          <th scope="col" class='text-center' onclick='Housing()'>Housing </th>
-          <th scope="col" class='text-center' onclick='Saving_accounts()'>Saving accounts</th>
-          <th scope="col" class='text-center' onclick='Cheking_accounts()'>Checking account</th>
-          <th scope="col" class='text-center' onclick='Credit_accounts()'>Credit amount</th>
-          <th scope="col" class='text-center' onclick='Duration()'>Duration</th>
-          <th scope="col" class='text-center' onclick='Purpose()'>Purpose</th>
+          <th scope="col"class='text-center header' >No</th>
+          <th scope="col" class='text-center header' >Age</th>
+          <th scope="col" class='text-center header' id='header'>Sex</th>
+          <th scope="col" class='text-center header' id='header'>Job</th>
+          <th scope="col" class='text-center header' id='header'>Housing</th>
+          <th scope="col" class='text-center header' id='header'>Saving accounts</th>
+          <th scope="col" class='text-center header' id='header'>Checking account</th>
+          <th scope="col" class='text-center header' id='header'>Credit amount</th>
+          <th scope="col" class='text-center header' id='header'>Duration</th>
+          <th scope="col" class='text-center header' id='header'>Purpose</th>
           
         </tr>
       </thead>
