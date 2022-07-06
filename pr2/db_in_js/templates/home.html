@@ -17,7 +17,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary container" style="border-radius:8px; height:80px">
       <div class="container">
         
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#" onclick='Homepagination()'>Home</a>
@@ -25,7 +27,7 @@
             
             <select onchange='range_page()' class="selectpicker" id='range' style="height:38px; width:160px; border-radius:8px"   >
             
-              <option class="text-center">Range of data</option>
+              <option class="text-center" id='rangedatas'>Range of data</option>
               <option class="text-center">50</option>
               <option class="text-center">60</option>
               <option class="text-center">100</option>
@@ -56,6 +58,7 @@
             <input class="form-control me-2" type="search" placeholder="Enter the data" aria-label="Search" id='serching'>
             
           </form>
+          
         </div>
       </div>
       
@@ -77,15 +80,15 @@
       <thead class='table-active' >
         <tr>
           <th scope="col"class='text-center header' >No</th>
-          <th scope="col" class='text-center header' >Age</th>
-          <th scope="col" class='text-center header' id='header'>Sex</th>
-          <th scope="col" class='text-center header' id='header'>Job</th>
-          <th scope="col" class='text-center header' id='header'>Housing</th>
-          <th scope="col" class='text-center header' id='header'>Saving accounts</th>
-          <th scope="col" class='text-center header' id='header'>Checking account</th>
-          <th scope="col" class='text-center header' id='header'>Credit amount</th>
-          <th scope="col" class='text-center header' id='header'>Duration</th>
-          <th scope="col" class='text-center header' id='header'>Purpose</th>
+          <th scope="col" class='text-center header' id='age' data-order='asec'>Age</th>
+          <th scope="col" class='text-center header' id='sex' data-order='asec' >Sex</th>
+          <th scope="col" class='text-center header' id='job' data-order='asec' >Job</th>
+          <th scope="col" class='text-center header' id='housing' data-order='asec' >Housing</th>
+          <th scope="col" class='text-center header' id='savingaccounts' data-order='asec' >Saving accounts</th>
+          <th scope="col" class='text-center header' id='checkingaccount' data-order='asec' >Checking account</th>
+          <th scope="col" class='text-center header'  id='creditamount' data-order='asec'>Credit amount</th>
+          <th scope="col" class='text-center header' id='duration' data-order='asec' >Duration</th>
+          <th scope="col" class='text-center header' id='purpose' data-order='asec' >Purpose</th>
           
         </tr>
       </thead>
