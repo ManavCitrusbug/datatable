@@ -39,8 +39,10 @@ function Homepagination() {
             }
 
             $('#page').html("");
+            var pagenum;
             for (i = 0; i < page; i++) {
-                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                pagenum=i+1;
+                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
             }
 
             $('#page').html();
@@ -76,8 +78,10 @@ function range_page() {
             var listdata = parseInt(range);
             var page = data.data.length / listdata;
             $('#page').html("");
+            var pagenum;
             for (i = 0; i < page; i++) {
-                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                pagenum=i+1;
+                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
             }
 
             $('#page').html();
@@ -107,8 +111,10 @@ function Pagination() {
             var len = data.data.length;
             var page = len / 40;
             $('#page').html("");
+            var pagenum;
             for (i = 0; i < page; i++) {
-                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                pagenum=i+1;
+                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
             }
 
             $('#page').html();
@@ -649,8 +655,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (agelist.length > 10) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -744,8 +752,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (sexlist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -824,8 +834,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (joblist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -919,8 +931,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Housinglist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -1016,8 +1030,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Saving_accountslist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -1111,8 +1127,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Checking_accountlist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -1191,8 +1209,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Credit_amountlist.length > 10) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -1268,8 +1288,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Durationlist.length > 10) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
@@ -1345,8 +1367,10 @@ function filter() {
                         }
                         $('#page').html("");
                         if (Purposelist.length > 20) {
+                            var pagenum;
                             for (i = 0; i < page; i++) {
-                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + i + "</a></li>");
+                                pagenum=i+1;
+                                $('#page').append("<li class='page-item' id=" + i + ">" + "<a class='page-link' rel=" + i + ">" + pagenum + "</a></li>");
                             }
 
                             $('#page').html();
